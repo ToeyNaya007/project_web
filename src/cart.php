@@ -20,7 +20,7 @@ if ($get_user !== null && mysqli_num_rows($get_user) > 0) {
     $_SESSION['user_id'] = $user['id']; // เปลี่ยนเป็น id ที่พบในฐานข้อมูล
 } else {
     header('Location: logout.php');
-    exit;
+    
 }
 ?>
 
